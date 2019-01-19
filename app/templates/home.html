@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block body %}         
+    <br>
+    <div class="container contpad">
+
+        <br>
+        <div id="containerIntro">
+        <h1>Welcome back, {{ name }}</h1>
+        <p><a href="/account" class="class1"><i>Change your password?</i></a></p>
+        </div>
+        <br>
+
+        <div class="jumbotron"> 
+            <br><br>
+            <p>Please select your dashboard</p>
+            <br>
+            <a href="/spendingview" class="btn btn-primary my-2"><strong>Total Spending</strong></a>
+            <a href="/incomeview" class="btn btn-primary my-2"><strong>Total Income</strong></a>
+        </div>
+
+    </div>
+{% endblock %}

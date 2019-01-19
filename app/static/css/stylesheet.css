@@ -1,0 +1,158 @@
+body{
+    background-color: #E9ECEF!important;
+    height: 100%;
+    padding-bottom: 140px!important;
+}
+
+#containerIntro h1 {
+    vertical-align: top;
+    font-family: 'Segoe UI Light';
+    font-size: 36px;
+    line-height: 0px;
+}
+
+#containerIntro p {
+    vertical-align: top;
+    font-family: 'Segoe UI Light';
+    font-size: 14px;
+    line-height: 60px;
+}
+
+A.class1 {color:#414b56;}
+A.class1:link  {text-decoration: none; color: #6d7680;}
+A.class1:visited {text-decoration: none; color: #6d7680;}
+A.class1:hover {text-decoration: underline; color: #3399DB;}
+A.class1:active {text-decoration: none; color: #6d7680;}
+
+A.class2 {color:white;}
+A.class2:link  {text-decoration: none; color: white;}
+A.class2:visited {text-decoration: none; color: white;}
+A.class2:hover {text-decoration: underline; color: white;}
+A.class2:active {text-decoration: none; color: white;}
+
+.navbar-inverse{
+    background-image:none!important;
+    background-color:#343A40!important;
+    color:white!important;
+    height: 60px!important;
+}
+
+.navbar-inverse .navbar-brand{
+    color: white!important;
+    background-color: white!important;
+    margin-top: 9px;
+    font-size: 1.5em;
+    padding:5px 15px;
+    margin-left: 0px!important;
+    margin-right: 20px!important;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a{
+    background-image: none!important;
+    background-color: #3399DB!important;
+    width: autoss;
+    margin-left: 20px;
+    padding-left:25px;
+    padding-right:25px;
+    margin-top: 9px;
+    border-radius: 5px 5px 0px 0px;   
+    font-size: 1.2em;
+    font-family: 'Segoe UI Light';
+}
+
+.logo{
+    width: 70px;
+    height: auto;
+}
+
+.contpad{
+padding-top:0px!important;
+margin-top: 0px!important;
+}
+
+.contpadend{
+    margin-top: 20px;
+    background-color: white!important;
+    border: 1px solid #414b56!important;
+    border-radius:5px!important;
+    width: auto!important;
+    height: auto!important;
+    }
+
+.jumbotron{
+    padding-top:0px!important;
+    margin-top: 0px!important;
+    background-color: white!important;
+    border: 1px solid #414b56!important;
+    border-radius:5px!important;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position-x: 50%;
+    background-position-y: 5%;
+    font-family: 'Segoe UI Light';
+}
+
+.btn-primary{
+    border: 1px solid #0f59a8!important;
+    background: #3399DB!important;
+    width:150px;
+}
+
+.jumbotron_table{
+    height: 100%;
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 auto;
+    font-family: 'Segoe UI Light';
+}
+
+.page-header{
+    margin-top: 5px!important;
+    text-align: center;
+}
+.form-control{
+    padding-left: 40%!important;
+    padding-right: auto!important;
+    padding-top: 20px!important;
+    padding-bottom:20px!important;
+    height: auto!important;
+    border-radius: 5px 5px 0px 0px!important;
+    border-top:1px solid #414b56!important;
+    border-right: 1px solid #414b56!important;
+    border-left:1px solid #414b56!important;
+    border-bottom:none!important;
+}
+.btn-default{
+    background-image:none!important;
+    background-color: rgb(202, 206, 209)!important;
+    border-top: 1px solid #414b56!important;
+    border-right: 1px solid #414b56!important;
+    border-left: 1px solid #414b56!important;
+    border-bottom: 1px solid #414b56!important;
+    border-radius:0px 0px 5px 5px!important;
+    width:100%!important;
+    padding:3px!important;
+    color: white!important;
+    text-shadow: none!important;
+
+}
+.btn-default:hover{
+    background-color: #3399DB!important;
+    color: white!important
+}
+
+footer{
+    margin-top:10px;
+    padding-right:80px;
+    padding-top:10px;
+    padding-bottom:5px;
+    background-color:#343A40!important;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    text-align: right;
+}

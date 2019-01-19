@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="container contpad">
+        <br>
+            <div class="jumbotron">
+                <br><br><br>
+                <h2>Update Summary</h2>
+                <br>
+                <p>{{ success }} transactions uploaded successfully</p>
+                <p>{{ failure }} ignored transactions (duplicates found)</p>
+                <i>Note: New transactions may take up to one hour to reflect in the table view.</i>  
+            </div>
+    </div>
+{% endblock %}

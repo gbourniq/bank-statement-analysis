@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    {% if stage == "updatingdb" %}
+        <script>
+            var source = new EventSource("/progress_updatingdb");
+            source.onmessage = function(event) {
+                $('.progress-bar').css('width', event.data+'%').attr('aria-valuenow', event.data);
+                $('.progress-bar-label').text(event.data+'%');
+                if(event.data == 100){
+                    source.close()
+                    setTimeout(
+                        function() 
+                        {
+                        window.document.location.href = window.location.protocol + "//" + window.location.host + "/success";
+                        }, 2000);
+               }
+            }
+        </script>
+    {% elif stage == "pdfprocessing" %}
+        <script>
+            var source = new EventSource("/progress_pdfprocessing");
+            source.onmessage = function(event) {
+                $('.progress-bar').css('width', event.data+'%').attr('aria-valuenow', event.data);
+                $('.progress-bar-label').text(event.data+'%');
+                if(event.data == 100){
+                    source.close()
+                    setTimeout(
+                        function() 
+                        {
+                        window.document.location.href = window.location.protocol + "//" + window.location.host + "/dfview";
+                        }, 2000);
+               }
+            }
+        </script>
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+
+    <div class="container contpad">
+        <br>
+        {% if stage == "pdfprocessing" %}
+            <div class="jumbotron">
+                <br><br><br>
+                <p>Extracting data from pdf...</p>
+                <i>This may a few minutes.</i>
+                <br><br>
+                <div class="progress" style="width: 50%; margin: 0px;margin-left: auto; margin-right:auto;">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                        <span class="progress-bar-label">0%</span>
+                    </div>
+                </div>
+            </div>
+        {% elif stage == "fileselection" %}
+            <div class="jumbotron">
+                <br><br><br>
+                <p>Select your Bank Statement file</p>
+            </div>
+            <form method="POST" enctype="multipart/form-data">
+                <input type="file" class="form-control" name="file" placeholder="files" id="apkfile">
+                <button type="submit" class="btn btn-default" name="submitButton" value=Upload>
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </button>
+            </form>
+            <br><br>
+            <div class="jumbotron">
+                <br><br>
+                <a href="/download/RELEVES_MR DOE JOHN_20170119.pdf" class="btn btn-primary my-2">PDF Sample</a> 
+                <a href="/download/RELEVES_MR DOE JOHN_20170119.xlsx" class="btn btn-primary my-2">.XLSX Sample</a>            
+            </div>
+        {% elif stage == "uploadfailure" %}
+            <div class="jumbotron">
+                <br><br><br>
+                <p>Unexpected error ocurred. Please report the issue to your administrator.</p>
+            </div>
+        {% elif stage == "updateconfirmation" %}
+            <div class="jumbotron">
+                <br><br><br>
+                <p>Are you sure you want to upload the table ?</p>
+                <a href="/updatingdb" class="btn btn-primary my-2">Yes</a> 
+                <a href="/upload" class="btn btn-primary my-2">Cancel</a>            
+            </div>
+            <div class="container contpadend">
+                <br><br><br>
+                <div style="text-align:center">
+                    <div class="col-md-12">
+                        {{ dataframe|safe }}  
+                        <br><br><br> 
+                    </div>
+                </div>
+            </div>
+        {% elif stage == "updatingdb" %}
+            <div class="jumbotron">
+                <br><br><br>
+                <p>Uploading ...</p>
+                <div class="progress" style="width: 50%; margin: 0px;margin-left: auto; margin-right:auto;">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                        <span class="progress-bar-label">0%</span>
+                    </div>
+                </div>
+            </div>
+        {% elif stage == "dfview" %}
+            <div class="jumbotron">
+                <br><br><br>
+                <p>Confirm Upload or Download Table as .xlsx</p>
+                <a href="/updateconfirmation" class="btn btn-primary my-2">Confirm Upload</a> 
+                <a href="/upload/output_table.xlsx" class="btn btn-primary my-2">Download Table</a>            
+            </div>
+            <div class="container contpadend">
+                <br><br><br>
+                <div style="text-align:center">
+                    <div class="col-md-12">
+                        {{ dataframe|safe }}  
+                        <br><br><br> 
+                    </div>
+                </div>
+            </div>
+        {% endif %} 
+    
+    </div>
+
+{% endblock %}

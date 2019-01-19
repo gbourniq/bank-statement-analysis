@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="Web app to display bank statements using PowerBI">
+        <meta name="author" content="Guillaume Bournique">
+        <link rel="stylesheet" href="/static/css/stylesheet.css">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+        <title>Bank Statement Analyser</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+        {% block head %}{% endblock %}
+
+        <style>
+            body {
+                padding-top: 70px;
+            }
+            footer {
+                margin-top: 50px;
+                padding-top: 13px;
+                padding-bottom: 5px;
+                background-color: #f5f5f5;
+            }
+            .text-muted {
+                color: #777;
+            }
+        </style>
+    </head>
+
+    <body>
+    
+        {% include "includes/_navbar.html" %}
+
+        {% block body %}{% endblock %}
+
+        <footer>
+            <div class="footer-nav-right">
+                <p><a href="/logout" class="class2">Log out</a></p>
+            </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    </body>
+
+</html>
