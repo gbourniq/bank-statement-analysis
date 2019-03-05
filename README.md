@@ -18,7 +18,7 @@ Username : admin<br/>
 Password : password123
 > Visualisations are generated from ~3000 transaction samples which can be viewed in transaction.db
 
-There are three main screen to the application : 
+There are three main screens to the application : 
 - Transaction details
 - Dashboard views
 - Statements upload
@@ -29,7 +29,7 @@ Transaction details :
 Dashboard selection screen
 ![image](resources/dashboard-selection.PNG)
 
-Dashboard view
+Dashboard view (Total spending)
 ![image](resources/total-spending-dashboard.PNG)
 
 ### Read further to create your own App
