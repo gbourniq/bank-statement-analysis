@@ -16,7 +16,7 @@ Behind the scenes, the app extracts transaction details from documents, predicts
 https://bsa-demo.azurewebsites.net/<br/>
 Username : admin<br/>
 Password : password123
-> Visualisations are generated from 2773 transactions samples which can be viewed in transaction.db
+> Visualisations are generated from ~3000 transaction samples which can be viewed in transaction.db
 
 There are three main screen to the application : 
 - Transaction details
@@ -24,13 +24,13 @@ There are three main screen to the application :
 - Statements upload
 
 Transaction details :
-![image](https://github.com/gbourniq/bankstatementanalysis/tree/master/resources/transaction-table.PNG)
+![image](https://github.com/gbourniq/bankstatementanalysis/tree/master/resources/transaction-table.PNG?raw=true)
 
 Dashboard selection screen
-![image](https://github.com/gbourniq/bankstatementanalysis/tree/master/resources/dashboard-selection.PNG)
+![image](https://github.com/gbourniq/bankstatementanalysis/tree/master/resources/dashboard-selection.PNG?raw=true)
 
 Dashboard view
-![image](https://github.com/gbourniq/bankstatementanalysis/tree/master/resources/total-spending-dashboard.PNG)
+![image](https://github.com/gbourniq/bankstatementanalysis/tree/master/resources/total-spending-dashboard.PNG?raw=true)
 
 ### Read further to create your own App
 #### Initial Setup
