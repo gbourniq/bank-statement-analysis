@@ -1,8 +1,16 @@
 # Bank Statement Analyser
 
 ### Overview
-This web app allows to analyse a bank account cash flows from bank statement documents. 
-Behind the scenes, the app extracts transaction details from documents, then predicts a category for each transaction, and finally upload the data to a SQL database from which PowerBI visualisations are automatically updated.
+This application will analyze your bank statements and will provide you an analytical report about your expenses. 
+This is a personal project I am working at the moment to get an idea about my expenses and sharpen my knowledge on following set of technologies :
+- Python Flask framework
+- Computer Vision (Google's Tesseract OCR)
+- Pdf to Image python package (Pdf2image)
+- Machine Learning (Scikit Learn) to predict transaction categories
+- Azure SQL Database to store transaction data and user login details
+- PowerBI with DirectQuery from Azure SQL Database
+
+Behind the scenes, the app extracts transaction details from documents, predicts a category for each transaction, and upload the data to a SQL database linked to interactive PowerBI visualisations.
 
 ### Demo
 https://bsa-demo.azurewebsites.net/<br/>
@@ -10,18 +18,22 @@ Username : admin<br/>
 Password : password123
 > Visualisations are generated from 2773 transactions samples which can be viewed in transaction.db
 
-### Technologies
-This is a Python Flask project integrating the following technologies: 
-- Computer Vision (Google's Tesseract OCR)
-- Pdf to Image module (Pdf2image)
-- Machine Learning (Scikit Learn) to predict each transaction category
-- Azure SQL Database to store transaction data and user login details
-- PowerBI with DirectQuery from Azure SQL Database
+There are three main screen to the application : 
+- Transaction details
+- Dashboard views
+- Statements upload
 
+Transaction details :
+![image](https://github.com/gbourniq/bankstatementanalysis/tree/master/resources/transaction-table.PNG)
 
+Dashboard selection screen
+![image](https://github.com/gbourniq/bankstatementanalysis/tree/master/resources/dashboard-selection.PNG)
 
-## Read further to create your own App
-### Initial Setup
+Dashboard view
+![image](https://github.com/gbourniq/bankstatementanalysis/tree/master/resources/total-spending-dashboard.PNG)
+
+### Read further to create your own App
+#### Initial Setup
 The following steps are required to link your own data to the displayed visualisations
 - Create a SQL Database with the tables suggested below *
 - Replace the database connection variables in parameters.py
@@ -53,7 +65,7 @@ CREATE TABLE users (
 	password VARCHAR(80)
 );
 ```
-### Run the app locally
+#### Run the app locally
 In the command prompt, run the following :
 1.	Install Docker
     ```
