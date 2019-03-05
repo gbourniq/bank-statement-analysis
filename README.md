@@ -1,8 +1,8 @@
 # Bank Statement Analyser
 
 ### Overview
-This application will analyze your bank statements and will provide you an analytical report about your expenses. 
-This is a personal project I am working at the moment to get an idea about my expenses and sharpen my knowledge on following set of technologies :
+This application analyses bank statements and provides analytical reports about the account expenses. 
+This is a personal project to get an idea about my expenses and sharpen my knowledge on following set of technologies :
 - Python Flask framework
 - Computer Vision (Google's Tesseract OCR)
 - Pdf to Image python package (Pdf2image)
