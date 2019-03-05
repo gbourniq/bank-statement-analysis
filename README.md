@@ -2,7 +2,7 @@
 
 ### Overview
 This application analyses bank statements and provides analytical reports on the account expenses. 
-This is a personal project to get an idea about my expenses and sharpen my knowledge on following set of technologies :
+This is a personal project to get an idea about my expenses and sharpen my knowledge on the following set of technologies :
 - Python Flask framework
 - Computer Vision (Google's Tesseract OCR)
 - Pdf to Image python package (Pdf2image)
