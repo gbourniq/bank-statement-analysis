@@ -32,6 +32,9 @@ Dashboard selection screen
 Dashboard view (Total spending)
 ![image](resources/total-spending-dashboard.PNG)
 
+Filtered Dashboard by Year and Category
+![image](resources/total-spending-filtered.png)
+
 ### Read further to create your own App
 #### Initial Setup
 The following steps are required to link your own data to the displayed visualisations
