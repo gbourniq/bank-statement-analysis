@@ -23,7 +23,7 @@ There are three main screens to the application :
 - Dashboard views
 - Statements upload
 
-Transaction details :
+Transaction details
 ![image](resources/transaction-table.PNG)
 
 Dashboard selection screen
