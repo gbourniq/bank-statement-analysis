@@ -1,14 +1,14 @@
 # Bank Statement Analyser
 
 ### Overview
-This application analyses bank statements and provides analytical reports about the account expenses. 
+This application analyses bank statements and provides analytical reports on the account expenses. 
 This is a personal project to get an idea about my expenses and sharpen my knowledge on following set of technologies :
 - Python Flask framework
 - Computer Vision (Google's Tesseract OCR)
 - Pdf to Image python package (Pdf2image)
 - Machine Learning (Scikit Learn) to predict transaction categories
 - Azure SQL Database to store transaction data and user login details
-- PowerBI with DirectQuery from Azure SQL Database
+- PowerBI visualisations
 
 Behind the scenes, the app extracts transaction details from documents, predicts a category for each transaction, and upload the data to a SQL database linked to interactive PowerBI visualisations.
 
