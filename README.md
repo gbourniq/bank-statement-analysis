@@ -27,10 +27,10 @@ Transaction details :
 ![image](resources/transaction-table.PNG)
 
 Dashboard selection screen
-![image](https://github.com/gbourniq/bankstatementanalysis/tree/master/resources/dashboard-selection.PNG?raw=true)
+![image](resources/dashboard-selection.PNG)
 
 Dashboard view
-![image](https://github.com/gbourniq/bankstatementanalysis/tree/master/resources/total-spending-dashboard.PNG?raw=true)
+![image](resources/total-spending-dashboard.PNG)
 
 ### Read further to create your own App
 #### Initial Setup
