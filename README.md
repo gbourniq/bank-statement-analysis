@@ -24,7 +24,7 @@ There are three main screen to the application :
 - Statements upload
 
 Transaction details :
-![image](https://github.com/gbourniq/bankstatementanalysis/tree/master/resources/transaction-table.PNG?raw=true)
+![image](resources/transaction-table.PNG)
 
 Dashboard selection screen
 ![image](https://github.com/gbourniq/bankstatementanalysis/tree/master/resources/dashboard-selection.PNG?raw=true)
