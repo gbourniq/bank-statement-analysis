@@ -1,6 +1,6 @@
 Flask==1.0.2
 fuzzywuzzy==0.17.0
-Jinja2==2.10
+Jinja2==2.11.3
 pandas==0.23.4
 paramiko==2.4.2
 passlib==1.7.1
