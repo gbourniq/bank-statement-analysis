@@ -10,7 +10,7 @@ pyodbc==4.0.25
 pytesseract==0.2.6
 requests==2.20.1
 scikit-learn==0.20.2
-urllib3==1.24.1
+urllib3==1.26.5
 Werkzeug==0.14.1
 XlsxWriter==1.1.2
 Flask-Bootstrap==3.3.7.1
